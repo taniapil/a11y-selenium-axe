@@ -1,0 +1,23 @@
+ACCESSIBILITY CHECK
+VIOLATIONS check for: https://www.google.com/
+Found 3 items
+
+1: Document must have one main landmark
+Description: Ensures the document has a main landmark
+Help URL: Document must have one main landmark
+Impact: moderate
+Tags: cat.semantics, best-practice
+
+
+2: Page must contain a level-one heading
+Description: Ensure that the page, or at least one of its frames contains a level-one heading
+Help URL: Page must contain a level-one heading
+Impact: moderate
+Tags: cat.semantics, best-practice
+
+
+3: All page content must be contained by landmarks
+Description: Ensures all page content is contained by landmarks
+Help URL: All page content must be contained by landmarks
+Impact: moderate
+Tags: cat.keyboard, best-practice

@@ -1,0 +1,51 @@
+ACCESSIBILITY CHECK
+VIOLATIONS check for: https://www.google.com/
+Found 7 items
+
+1: Required ARIA attributes must be provided
+Description: Ensures elements with ARIA roles have all required ARIA attributes
+Help URL: Required ARIA attributes must be provided
+Impact: critical
+Tags: cat.aria, wcag2a, wcag412
+
+
+2: Page must have means to bypass repeated blocks
+Description: Ensures each page has at least one mechanism for a user to bypass navigation and jump straight to the content
+Help URL: Page must have means to bypass repeated blocks
+Impact: serious
+Tags: cat.keyboard, wcag2a, wcag241, section508, section508.22.o
+
+
+3: Elements must have sufficient color contrast
+Description: Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds
+Help URL: Elements must have sufficient color contrast
+Impact: serious
+Tags: cat.color, wcag2aa, wcag143
+
+
+4: Images must have alternate text
+Description: Ensures <img> elements have alternate text or a role of none or presentation
+Help URL: Images must have alternate text
+Impact: critical
+Tags: cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, ACT
+
+
+5: Document must have one main landmark
+Description: Ensures the document has a main landmark
+Help URL: Document must have one main landmark
+Impact: moderate
+Tags: cat.semantics, best-practice
+
+
+6: Page must contain a level-one heading
+Description: Ensure that the page, or at least one of its frames contains a level-one heading
+Help URL: Page must contain a level-one heading
+Impact: moderate
+Tags: cat.semantics, best-practice
+
+
+7: All page content must be contained by landmarks
+Description: Ensures all page content is contained by landmarks
+Help URL: All page content must be contained by landmarks
+Impact: moderate
+Tags: cat.keyboard, best-practice

@@ -1,0 +1,9 @@
+ACCESSIBILITY CHECK
+VIOLATIONS check for: http://the-internet.herokuapp.com/broken_images
+Found 1 items
+
+1: Images must have alternate text
+Description: Ensures <img> elements have alternate text or a role of none or presentation
+Help URL: Images must have alternate text
+Impact: critical
+Tags: cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, ACT
