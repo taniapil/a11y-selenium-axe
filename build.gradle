@@ -15,7 +15,7 @@ targetCompatibility = 1.8
 dependencies {
     implementation('org.seleniumhq.selenium:selenium-java:3.141.59')
     implementation('io.github.bonigarcia:webdrivermanager:4.2.0')
-    implementation('com.deque.html.axe-core:selenium:4.1.1')
+    implementation('com.deque.html.axe-core:selenium:4.1.2')
     testImplementation('org.testng:testng:7.1.0')
     testCompile('org.slf4j:slf4j-simple:1.7.30')
 }
