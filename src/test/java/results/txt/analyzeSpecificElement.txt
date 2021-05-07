@@ -7,3 +7,9 @@ Description: Ensures <img> elements have alternate text or a role of none or pre
 Help URL: Images must have alternate text
 Impact: critical
 Tags: cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, ACT
+		HTML element: <img src="asdf.jpg">
+		Selector: [img[src$="asdf\.jpg"]]
+		HTML element: <img src="hjkl.jpg">
+		Selector: [img[src$="hjkl\.jpg"]]
+		HTML element: <img src="img/avatar-blank.jpg">
+		Selector: [img[src$="avatar-blank\.jpg"]]

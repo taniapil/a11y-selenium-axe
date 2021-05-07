@@ -1,0 +1,69 @@
+ACCESSIBILITY CHECK
+VIOLATIONS check for: https://www.google.com/
+Found 5 items
+
+1: Required ARIA attributes must be provided
+Description: Ensures elements with ARIA roles have all required ARIA attributes
+Help URL: Required ARIA attributes must be provided
+Impact: critical
+Tags: cat.aria, wcag2a, wcag412
+		HTML element: <input class="gLFyf gsfi" jsaction="paste:puy29d;" maxlength="2048" name="q" type="text" aria-autocomplete="both" aria-haspopup="false" autocapitalize="off" autocomplete="off" autocorrect="off" autofocus="" role="combobox" spellcheck="false" title="Suche" value="" aria-label="Suche" data-ved="0ahUKEwj1uL_W6rfwAhVC6uAKHUQvBNcQ39UDCAY">
+		Selector: [.gLFyf]
+
+
+2: Page must have means to bypass repeated blocks
+Description: Ensures each page has at least one mechanism for a user to bypass navigation and jump straight to the content
+Help URL: Page must have means to bypass repeated blocks
+Impact: serious
+Tags: cat.keyboard, wcag2a, wcag241, section508, section508.22.o
+		HTML element: <html itemscope="" itemtype="http://schema.org/WebPage" lang="de">
+		Selector: [html]
+
+
+3: Document must have one main landmark
+Description: Ensures the document has a main landmark
+Help URL: Document must have one main landmark
+Impact: moderate
+Tags: cat.semantics, best-practice
+		HTML element: <html itemscope="" itemtype="http://schema.org/WebPage" lang="de">
+		Selector: [html]
+
+
+4: Page must contain a level-one heading
+Description: Ensure that the page, or at least one of its frames contains a level-one heading
+Help URL: Page must contain a level-one heading
+Impact: moderate
+Tags: cat.semantics, best-practice
+		HTML element: <html itemscope="" itemtype="http://schema.org/WebPage" lang="de">
+		Selector: [html]
+
+
+5: All page content must be contained by landmarks
+Description: Ensures all page content is contained by landmarks
+Help URL: All page content must be contained by landmarks
+Impact: moderate
+Tags: cat.keyboard, best-practice
+		HTML element: <a class="MV3Tnb" href="https://about.google/?fg=1&amp;utm_source=google-DE&amp;utm_medium=referral&amp;utm_campaign=hp-header" onmousedown="return rwt(this,'','','','','AOvVaw11hSySvhw2lpjxMS0MuRKX','','0ahUKEwj1uL_W6rfwAhVC6uAKHUQvBNcQkNQCCAI','','',event)">Über Google</a>
+		Selector: [.MV3Tnb:nth-child(2)]
+		HTML element: <a class="MV3Tnb" href="https://store.google.com/DE?utm_source=hp_header&amp;utm_medium=google_ooo&amp;utm_campaign=GS100042&amp;hl=de-DE" onmousedown="return rwt(this,'','','','','AOvVaw21x6ai43HfkUtiOgZaOat4','','0ahUKEwj1uL_W6rfwAhVC6uAKHUQvBNcQpMwCCAM','','',event)">Store</a>
+		Selector: [.MV3Tnb:nth-child(3)]
+		HTML element: <div>
+		Selector: [.gb_Xd > div:nth-child(1)]
+		HTML element: <div class="gb_Te">
+		Selector: [.gb_Te]
+		HTML element: <img class="lnXdpd" alt="Google" height="92" src="/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" srcset="/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png 1x, /images/branding/googlelogo/2x/googlelogo_color_272x92dp.png 2x" width="272" data-iml="1620399537396" data-atf="1">
+		Selector: [.lnXdpd]
+		HTML element: <div id="SIvCob">Google angeboten auf:  <a href="https://www.google.com/setprefs?sig=0_UHfurQ37WriHHbcFAdjc205v7GM%3D&amp;hl=en&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwj1uL_W6rfwAhVC6uAKHUQvBNcQ2ZgBCBA">English</a>  </div>
+		Selector: [#SIvCob]
+		HTML element: <div class="uU7dJb">Deutschland</div>
+		Selector: [.uU7dJb]
+		HTML element: <div class="KxwPGc AghGtd">
+		Selector: [.AghGtd]
+		HTML element: <div class="KxwPGc ssOUyb">
+		Selector: [.ssOUyb]
+		HTML element: <a class="pHiOh" href="https://policies.google.com/privacy?hl=de&amp;fg=1" onmousedown="return rwt(this,'','','','','AOvVaw3gTaWYgmAu7sI3AoWOcuQj','','0ahUKEwj1uL_W6rfwAhVC6uAKHUQvBNcQ8awCCBQ','','',event)">Datenschutzerklärung</a>
+		Selector: [.iTjxkf > .pHiOh:nth-child(1)]
+		HTML element: <a class="pHiOh" href="https://policies.google.com/terms?hl=de&amp;fg=1" onmousedown="return rwt(this,'','','','','AOvVaw1fvYmShTLTf9mqX4pbLzHu','','0ahUKEwj1uL_W6rfwAhVC6uAKHUQvBNcQ8qwCCBU','','',event)">Nutzungsbedingungen</a>
+		Selector: [.iTjxkf > .pHiOh:nth-child(2)]
+		HTML element: <button jsname="pzCKEc" class="EzVRq" aria-controls="dEjpnf" aria-haspopup="true" id="Mses6b" jsaction="mousedown:lgs1Pb;FwYIgd;keydown:QXPedb">Einstellungen</button>
+		Selector: [#Mses6b]

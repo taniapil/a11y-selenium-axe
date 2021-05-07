@@ -7,6 +7,8 @@ Description: Ensures the document has a main landmark
 Help URL: Document must have one main landmark
 Impact: moderate
 Tags: cat.semantics, best-practice
+		HTML element: <html itemscope="" itemtype="http://schema.org/WebPage" lang="de">
+		Selector: [html]
 
 
 2: Page must contain a level-one heading
@@ -14,6 +16,8 @@ Description: Ensure that the page, or at least one of its frames contains a leve
 Help URL: Page must contain a level-one heading
 Impact: moderate
 Tags: cat.semantics, best-practice
+		HTML element: <html itemscope="" itemtype="http://schema.org/WebPage" lang="de">
+		Selector: [html]
 
 
 3: All page content must be contained by landmarks
@@ -21,3 +25,27 @@ Description: Ensures all page content is contained by landmarks
 Help URL: All page content must be contained by landmarks
 Impact: moderate
 Tags: cat.keyboard, best-practice
+		HTML element: <a class="MV3Tnb" href="https://about.google/?fg=1&amp;utm_source=google-DE&amp;utm_medium=referral&amp;utm_campaign=hp-header" onmousedown="return rwt(this,'','','','','AOvVaw11hSySvhw2lpjxMS0MuRKX','','0ahUKEwjL0PLW6rfwAhUMlhQKHWkIAl4QkNQCCAI','','',event)">Über Google</a>
+		Selector: [.MV3Tnb:nth-child(2)]
+		HTML element: <a class="MV3Tnb" href="https://store.google.com/DE?utm_source=hp_header&amp;utm_medium=google_ooo&amp;utm_campaign=GS100042&amp;hl=de-DE" onmousedown="return rwt(this,'','','','','AOvVaw21x6ai43HfkUtiOgZaOat4','','0ahUKEwjL0PLW6rfwAhUMlhQKHWkIAl4QpMwCCAM','','',event)">Store</a>
+		Selector: [.MV3Tnb:nth-child(3)]
+		HTML element: <div>
+		Selector: [.gb_Xd > div:nth-child(1)]
+		HTML element: <div class="gb_Te">
+		Selector: [.gb_Te]
+		HTML element: <img class="lnXdpd" alt="Google" height="92" src="/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" srcset="/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png 1x, /images/branding/googlelogo/2x/googlelogo_color_272x92dp.png 2x" width="272" data-iml="1620399538188" data-atf="1">
+		Selector: [.lnXdpd]
+		HTML element: <div id="SIvCob">Google angeboten auf:  <a href="https://www.google.com/setprefs?sig=0_4nlYNjZJJPPR89FC4rp7v_8AdDs%3D&amp;hl=en&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwjL0PLW6rfwAhUMlhQKHWkIAl4Q2ZgBCBA">English</a>  </div>
+		Selector: [#SIvCob]
+		HTML element: <div class="uU7dJb">Deutschland</div>
+		Selector: [.uU7dJb]
+		HTML element: <div class="KxwPGc AghGtd">
+		Selector: [.AghGtd]
+		HTML element: <div class="KxwPGc ssOUyb">
+		Selector: [.ssOUyb]
+		HTML element: <a class="pHiOh" href="https://policies.google.com/privacy?hl=de&amp;fg=1" onmousedown="return rwt(this,'','','','','AOvVaw3gTaWYgmAu7sI3AoWOcuQj','','0ahUKEwjL0PLW6rfwAhUMlhQKHWkIAl4Q8awCCBQ','','',event)">Datenschutzerklärung</a>
+		Selector: [.iTjxkf > .pHiOh:nth-child(1)]
+		HTML element: <a class="pHiOh" href="https://policies.google.com/terms?hl=de&amp;fg=1" onmousedown="return rwt(this,'','','','','AOvVaw1fvYmShTLTf9mqX4pbLzHu','','0ahUKEwjL0PLW6rfwAhUMlhQKHWkIAl4Q8qwCCBU','','',event)">Nutzungsbedingungen</a>
+		Selector: [.iTjxkf > .pHiOh:nth-child(2)]
+		HTML element: <button jsname="pzCKEc" class="EzVRq" aria-controls="dEjpnf" aria-haspopup="true" id="Mses6b" jsaction="mousedown:lgs1Pb;FwYIgd;keydown:QXPedb">Einstellungen</button>
+		Selector: [#Mses6b]

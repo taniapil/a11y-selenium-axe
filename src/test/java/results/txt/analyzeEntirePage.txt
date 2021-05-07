@@ -1,12 +1,14 @@
 ACCESSIBILITY CHECK
 VIOLATIONS check for: https://www.google.com/
-Found 7 items
+Found 6 items
 
 1: Required ARIA attributes must be provided
 Description: Ensures elements with ARIA roles have all required ARIA attributes
 Help URL: Required ARIA attributes must be provided
 Impact: critical
 Tags: cat.aria, wcag2a, wcag412
+		HTML element: <input class="gLFyf gsfi" jsaction="paste:puy29d;" maxlength="2048" name="q" type="text" aria-autocomplete="both" aria-haspopup="false" autocapitalize="off" autocomplete="off" autocorrect="off" autofocus="" role="combobox" spellcheck="false" title="Suche" value="" aria-label="Suche" data-ved="0ahUKEwjngJ7U6rfwAhUNmRQKHelIDl4Q39UDCAY">
+		Selector: [.gLFyf]
 
 
 2: Page must have means to bypass repeated blocks
@@ -14,6 +16,8 @@ Description: Ensures each page has at least one mechanism for a user to bypass n
 Help URL: Page must have means to bypass repeated blocks
 Impact: serious
 Tags: cat.keyboard, wcag2a, wcag241, section508, section508.22.o
+		HTML element: <html itemscope="" itemtype="http://schema.org/WebPage" lang="de">
+		Selector: [html]
 
 
 3: Elements must have sufficient color contrast
@@ -21,31 +25,68 @@ Description: Ensures the contrast between foreground and background colors meets
 Help URL: Elements must have sufficient color contrast
 Impact: serious
 Tags: cat.color, wcag2aa, wcag143
+		HTML element: <div class="uU7dJb">Deutschland</div>
+		Selector: [.uU7dJb]
+		HTML element: <a class="pHiOh" href="https://www.google.com/intl/de_de/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&amp;utm_source=google.com&amp;utm_medium=referral&amp;utm_campaign=google_hpafooter&amp;fg=1" onmousedown="return rwt(this,'','','','','AOvVaw1du9iyM9670M6tgC8t-gt8','','0ahUKEwjngJ7U6rfwAhUNmRQKHelIDl4QkdQCCBE','','',event)">
+		Selector: [.AghGtd > .pHiOh:nth-child(1)]
+		HTML element: <a class="pHiOh" href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&amp;utm_source=google.com&amp;utm_medium=referral&amp;utm_campaign=google_hpbfooter&amp;fg=1" onmousedown="return rwt(this,'','','','','AOvVaw2SJ4zwRVXKyZr53qG9dm4K','','0ahUKEwjngJ7U6rfwAhUNmRQKHelIDl4QktQCCBI','','',event)">
+		Selector: [.AghGtd > .pHiOh:nth-child(2)]
+		HTML element: <a class="pHiOh" href="https://google.com/search/howsearchworks/?fg=1">  Wie funktioniert die Google Suche? </a>
+		Selector: [.pHiOh:nth-child(3)]
+		HTML element: <span class="ktLKi">CO2-neutral seit 2007</span>
+		Selector: [.ktLKi]
+		HTML element: <a class="pHiOh" href="https://policies.google.com/privacy?hl=de&amp;fg=1" onmousedown="return rwt(this,'','','','','AOvVaw3gTaWYgmAu7sI3AoWOcuQj','','0ahUKEwjngJ7U6rfwAhUNmRQKHelIDl4Q8awCCBQ','','',event)">Datenschutzerklärung</a>
+		Selector: [.iTjxkf > .pHiOh:nth-child(1)]
+		HTML element: <a class="pHiOh" href="https://policies.google.com/terms?hl=de&amp;fg=1" onmousedown="return rwt(this,'','','','','AOvVaw1fvYmShTLTf9mqX4pbLzHu','','0ahUKEwjngJ7U6rfwAhUNmRQKHelIDl4Q8qwCCBU','','',event)">Nutzungsbedingungen</a>
+		Selector: [.iTjxkf > .pHiOh:nth-child(2)]
+		HTML element: <button jsname="pzCKEc" class="EzVRq" aria-controls="dEjpnf" aria-haspopup="true" id="Mses6b" jsaction="mousedown:lgs1Pb;FwYIgd;keydown:QXPedb">Einstellungen</button>
+		Selector: [#Mses6b]
 
 
-4: Images must have alternate text
-Description: Ensures <img> elements have alternate text or a role of none or presentation
-Help URL: Images must have alternate text
-Impact: critical
-Tags: cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, ACT
-
-
-5: Document must have one main landmark
+4: Document must have one main landmark
 Description: Ensures the document has a main landmark
 Help URL: Document must have one main landmark
 Impact: moderate
 Tags: cat.semantics, best-practice
+		HTML element: <html itemscope="" itemtype="http://schema.org/WebPage" lang="de">
+		Selector: [html]
 
 
-6: Page must contain a level-one heading
+5: Page must contain a level-one heading
 Description: Ensure that the page, or at least one of its frames contains a level-one heading
 Help URL: Page must contain a level-one heading
 Impact: moderate
 Tags: cat.semantics, best-practice
+		HTML element: <html itemscope="" itemtype="http://schema.org/WebPage" lang="de">
+		Selector: [html]
 
 
-7: All page content must be contained by landmarks
+6: All page content must be contained by landmarks
 Description: Ensures all page content is contained by landmarks
 Help URL: All page content must be contained by landmarks
 Impact: moderate
 Tags: cat.keyboard, best-practice
+		HTML element: <a class="MV3Tnb" href="https://about.google/?fg=1&amp;utm_source=google-DE&amp;utm_medium=referral&amp;utm_campaign=hp-header" onmousedown="return rwt(this,'','','','','AOvVaw11hSySvhw2lpjxMS0MuRKX','','0ahUKEwjngJ7U6rfwAhUNmRQKHelIDl4QkNQCCAI','','',event)">Über Google</a>
+		Selector: [.MV3Tnb:nth-child(2)]
+		HTML element: <a class="MV3Tnb" href="https://store.google.com/DE?utm_source=hp_header&amp;utm_medium=google_ooo&amp;utm_campaign=GS100042&amp;hl=de-DE" onmousedown="return rwt(this,'','','','','AOvVaw21x6ai43HfkUtiOgZaOat4','','0ahUKEwjngJ7U6rfwAhUNmRQKHelIDl4QpMwCCAM','','',event)">Store</a>
+		Selector: [.MV3Tnb:nth-child(3)]
+		HTML element: <div>
+		Selector: [.gb_Xd > div:nth-child(1)]
+		HTML element: <div class="gb_Te">
+		Selector: [.gb_Te]
+		HTML element: <img class="lnXdpd" alt="Google" height="92" src="/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" srcset="/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png 1x, /images/branding/googlelogo/2x/googlelogo_color_272x92dp.png 2x" width="272" data-atf="1">
+		Selector: [.lnXdpd]
+		HTML element: <div id="SIvCob">Google angeboten auf:  <a href="https://www.google.com/setprefs?sig=0_Iv-VQZmeYn_xOY97jqSLn1gy6NQ%3D&amp;hl=en&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwjngJ7U6rfwAhUNmRQKHelIDl4Q2ZgBCBA">English</a>  </div>
+		Selector: [#SIvCob]
+		HTML element: <div class="uU7dJb">Deutschland</div>
+		Selector: [.uU7dJb]
+		HTML element: <div class="KxwPGc AghGtd">
+		Selector: [.AghGtd]
+		HTML element: <div class="KxwPGc ssOUyb">
+		Selector: [.ssOUyb]
+		HTML element: <a class="pHiOh" href="https://policies.google.com/privacy?hl=de&amp;fg=1" onmousedown="return rwt(this,'','','','','AOvVaw3gTaWYgmAu7sI3AoWOcuQj','','0ahUKEwjngJ7U6rfwAhUNmRQKHelIDl4Q8awCCBQ','','',event)">Datenschutzerklärung</a>
+		Selector: [.iTjxkf > .pHiOh:nth-child(1)]
+		HTML element: <a class="pHiOh" href="https://policies.google.com/terms?hl=de&amp;fg=1" onmousedown="return rwt(this,'','','','','AOvVaw1fvYmShTLTf9mqX4pbLzHu','','0ahUKEwjngJ7U6rfwAhUNmRQKHelIDl4Q8qwCCBU','','',event)">Nutzungsbedingungen</a>
+		Selector: [.iTjxkf > .pHiOh:nth-child(2)]
+		HTML element: <button jsname="pzCKEc" class="EzVRq" aria-controls="dEjpnf" aria-haspopup="true" id="Mses6b" jsaction="mousedown:lgs1Pb;FwYIgd;keydown:QXPedb">Einstellungen</button>
+		Selector: [#Mses6b]
