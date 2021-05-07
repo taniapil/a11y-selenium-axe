@@ -1,5 +1,7 @@
 package com.a11y;
 
+import com.deque.html.axecore.axeargs.AxeRunOnlyOptions;
+import com.deque.html.axecore.axeargs.AxeRunOptions;
 import com.deque.html.axecore.extensions.WebDriverExtensions;
 import com.deque.html.axecore.selenium.AxeBuilder;
 import com.deque.html.axecore.selenium.AxeReporter;
@@ -43,10 +45,10 @@ public class A11yTest extends TestBase {
 
     @Test
     public void analyzePageIncludingExcludingOptions(Method method) {
-        driver.get("https://s1.demo.opensourcecms.com/wordpress/");
+        driver.get("https://www.workable.com/");
         result = new AxeBuilder()
-                .include(Arrays.asList("#masthead", "#content"))
-                .exclude(Collections.singletonList("aside"))
+                .include(Arrays.asList(".demo-badges__no-divider___30pYA"))
+                .exclude(Collections.singletonList("#stars"))
                 .analyze(driver);
         try {
             Assert.assertFalse(AxeReporter.getReadableAxeResults(ResultType.Violations.getKey(), driver, result.getViolations()), "Violations found");
@@ -66,6 +68,25 @@ public class A11yTest extends TestBase {
         try {
             Assert.assertTrue(AxeReporter.getReadableAxeResults(ResultType.Violations.getKey(), driver, result.getViolations()), "No violations found");
             Assert.assertEquals(result.getViolations().size(), 3, String.format("%s violations found", result.getViolations().size()));
+        } finally {
+            generateReports(method.getName());
+        }
+    }
+
+    @Test
+    public void analyzePageWithOptions(Method method) {
+        driver.get("https://www.google.com/");
+        AxeRunOnlyOptions runOnlyOptions = new AxeRunOnlyOptions();
+        runOnlyOptions.setType("tag");
+        runOnlyOptions.setValues(Arrays.asList("wcag2a", "best-practice"));
+        AxeRunOptions runOptions = new AxeRunOptions();
+        runOptions.setRunOnly(runOnlyOptions);
+        result = new AxeBuilder()
+                .withOptions(runOptions)
+                .analyze(driver);
+        try {
+            Assert.assertTrue(AxeReporter.getReadableAxeResults(ResultType.Violations.getKey(), driver, result.getViolations()), "No violations found");
+            Assert.assertEquals(result.getViolations().size(), 5, String.format("%s violations found", result.getViolations().size()));
         } finally {
             generateReports(method.getName());
         }
